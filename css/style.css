@@ -1,0 +1,313 @@
+html,body{
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+li{
+    list-style: none;
+}
+
+/* ====================================================
+    HEADER
+=====================================================*/
+    .header{
+        display: flex;
+        height: 70px;
+        width: 100%;
+        padding: 20px;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        z-index: 90;
+    }
+    .header .logo a{
+        position: relative;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 25px;
+    }
+    .logo a:after {
+        content: '';
+        background: #03e17a;
+        width: 5px;
+        height: 5px;
+        position: absolute;
+        bottom: 5px;
+        right: -7px;
+    }
+
+    .header-menu{
+        right: 2rem;
+        position: absolute;
+    }
+    .header-menu .menu-toggle{
+        letter-spacing: .3rem;
+        color: #03e17a;
+        text-decoration: none;
+        vertical-align: middle;
+        word-spacing: 0px;
+        font-size: 20px;
+        font-weight: 600;
+        -webkit-transition: all 0.5s ease-in-out;
+                transition: all 0.5s ease-in-out;
+    }
+    .header-menu .menu-toggle:hover {
+        color: white;
+    }
+    .header-menu .menu-toggle span{
+        font-size: 12px;
+        vertical-align: middle;
+    }
+/* ============ END ===================== */
+
+
+
+
+
+/* ====================================================
+    SIDEBAR
+=====================================================*/
+    .sidebar-container{
+        background-color: #111;
+        height: 100vh;
+        width: 240px;
+        position: absolute;
+        right: 0;
+        z-index: 9090;
+        transform: translateX(240px);
+        -webkit-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+    }
+    .sidebar-container.active{
+        transform: translateX(0px);
+    }
+    .sidebar-head{
+        width: 100%;
+        padding:.3rem 1rem;
+        position: absolute;
+        top: 1rem;
+        right: 0;
+        left: 0;
+    }
+    .sidebar-head .sidebar-heading{
+        color: #03e17a;
+        font-size: 11px;
+        letter-spacing: 0.3rem;
+    }
+    .sidebar-head .sidebar-menu-close{
+        color: white;
+        float: right;
+        background: black;
+        height: 32px;
+        width: 32px;
+        text-align: center;
+        padding: 5px;
+    }
+    .sidebar-container .sidebar-footer{
+        width: 200px;
+        position: absolute;
+        bottom: -3rem;
+        right: 0;
+        left: 0;
+    }
+    .sidebar-container ul{
+        width: 200px;
+        height: max-content;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding-left: 0;
+    }
+    .sidebar-container ul > li{
+        margin: 1rem;
+    }
+    .sidebar-container ul > li a{
+        color: white;
+        text-decoration: none;
+    }
+    .sidebar-footer a{
+        color: #333;
+        text-decoration: none;
+        margin: .3rem;
+    }
+/* ============ END ===================== */
+
+
+
+
+
+/* ====================================================
+    LEFT PANEL
+=====================================================*/
+#section-hero {
+    position: relative;
+    text-align: center;
+    background-color: #000;
+    min-height: 100vh;
+}
+#section-hero:before{
+    position: absolute;
+    top: 0;
+    content: '';
+    display: block;
+    background: url(../img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%, 50px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+#section-hero .container{
+    z-index: 2;
+}
+#section-hero .lead{
+    font-family: "montserrat-medium", sans-serif;
+    font-size: .9rem;
+    color: #818386;
+    letter-spacing: .3rem;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+    margin-left: 6px;
+}
+.btn-cf-digital{
+    font-size: 12px;
+    padding: 1rem 0rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 215px;
+    margin: 1.5rem 1.5rem 0 0;
+    letter-spacing: .25rem;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.btn-cf-digital:active,
+.btn-cf-digital:focus{
+    box-shadow: none;
+}
+/* ============ END ===================== */
+
+
+
+
+
+
+/* ====================================================
+    RIGHT PANEL
+=====================================================*/
+.home-scroll-arrow {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    word-spacing: 10px;
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+}
+.home-scroll-arrow i{
+    color: green;
+}
+.home-scroll-arrow:hover{
+    color:inherit
+}
+
+
+.home-social-container{
+    width: max-content;
+    height: max-content;
+    margin: auto 0 auto auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding-left: 0;
+}
+.home-social-panel{
+    text-align: right;
+}
+
+.home-social-panel .home-social-link{
+    margin: 1rem;
+}
+.home-social-panel .home-social-link a{
+    display: block;
+    height: 32px;
+    width: 32px;
+    color: white;
+    border: 2px solid white;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 3px;
+    text-align: center;
+}
+.home-social-panel .home-social-link a span{
+    margin-left: 2rem;
+    opacity: 1;
+    display: flex;
+    justify-content: flex-end;
+    width: 0;
+    left: 0;
+    margin-top: -1.3rem;
+    color: #03e17a;
+    font-weight: 600;
+    font-size: 12px;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    position: absolute;
+    -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+}
+.home-social-panel .home-social-link a:hover span{
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+
+/* ============ END ===================== */
+
+
+
+
+
+
+/* ========== Responsive ================ */
+
+
+/*------------- Mobile Screen ------------*/
+@media only screen and (max-width:380px) {
+    .home-social-container{
+        display: none !important;
+    }
+    .home-heading,
+    .home-sub-heading,
+    #section-hero .buttons {
+        text-align: center !important;
+    }
+    .btn-cf-digital{
+        margin:0;
+    }
+
+    #section-hero .home-right-panel{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 320px) {
+      footer:before {
+      top: -73px;
+    }
+    .info {
+      top: 55%;
+    }
+  }
